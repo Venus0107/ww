@@ -1,5 +1,5 @@
 <iframe id="iframe"></iframe>
-<img src="img">
+<img id="img">
 <script>
     async function req(url){
         return await new Promise((resolve, reject) => {
@@ -10,8 +10,8 @@
                     return resolve();
                 else
                     return reject();
-            }
-        })
+            };
+        });
     }
 
     async function search(query){
